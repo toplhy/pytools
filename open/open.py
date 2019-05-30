@@ -21,7 +21,7 @@ def test_network():
         index += 1
         network = os.system("ping www.baidu.com")
         print("第%s次，结果是：%s"%(index, network))
-    return True if(network != 0) else False
+    return True if(network == 0) else False
 
 
 # 启动Everything后最小化
